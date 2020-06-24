@@ -82,7 +82,7 @@ function App() {
           handleState={handleState}
           handleCity={handleCity} />
         <hr/>
-        {isLoading ? <Loader><CircularProgress/></Loader> : null}
+        {isLoading ? <Loader><CircularProgress color="primary"/></Loader> : null}
         { isSearched ? 
         <CurrentWeather 
           city={city}
@@ -111,7 +111,7 @@ const WeatherContainer = styled.div`
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  background-color: #f4f3ee;
+  background-color: rgba(244, 243, 238, 0.1);
   box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
 
 `;
@@ -136,5 +136,6 @@ const MainContainer = styled.div`
 const Loader = styled.div`
   width: 100%;
   text-align: center;
-  margin: 2rem;
+  margin: 2rem 0rem;
+  color: #fff;
 `;

@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
       margin: "0.5rem",
       minWidth: 100,
       height: "50px",
-      justifyContent: "center"
+      justifyContent: "center",
     }
   }));
 
@@ -26,8 +26,10 @@ const Form = (props) => {
                 <TextField 
                     value={city}
                     onChange={handleCity}
+                    style={{color: "rgba(244, 243, 238, 1)"}}
                     id="outlined-basic" 
                     label="City" 
+                    style={{background: "rgba(244, 243, 238, 0.5)"}}
                     variant="outlined" />
             </FormControl>
             <FormControl variant="outlined" className={classes.formControl}>
@@ -111,6 +113,10 @@ const Form = (props) => {
 export default Form
 
 const StyledForm = styled.form`
-    margin: 1rem auto;
-    background-color: #f4f3ee;
+    margin: 0 auto;
+    padding: 1rem 0rem;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.1);
+    background-color: rgba(244, 243, 238, 0.9);
 `;

@@ -80,8 +80,8 @@ const CurrentWeather = (props) => {
         <div>
             { showForecast ? 
             <MainContainer>
-                <Toggle><p className={tempType === "C" ? "selected" : ""} onClick={toggleTempType}>C°</p><p>/</p><p className={tempType === "F" ? "selected" : ""} onClick={toggleTempType}>F°</p></Toggle>
-                <h2>Weather Forecast for {name}</h2>
+                {isLoading ? null : <Toggle><p className={tempType === "C" ? "selected" : ""} onClick={toggleTempType}>C°</p><p>/</p><p className={tempType === "F" ? "selected" : ""} onClick={toggleTempType}>F°</p></Toggle>}
+                {isLoading ? null : <h2>Weather Forecast for {name}</h2> }
                 <ForecastContainer>
                     {weatherForecast.filter(day => day.dt_txt.includes("12:00:00")).map(item => {
                         const { main, weather } = item;
@@ -128,7 +128,7 @@ const CurrentWeatherContainer = styled.div`
     position: relative;
     justify-content: center;
     align-items: center;
-    color: #444;
+    color: #fff;
     img {
         margin: 0 auto;
         height: 250px;
@@ -136,12 +136,12 @@ const CurrentWeatherContainer = styled.div`
     }
     h2 {
         margin: 0;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         font-weight: 300;
     }
     .small {
         font-size: 0.8rem;
-        color: lightgray;
+        color: #fff;
         margin: 0;
         padding:0;
     }
@@ -169,7 +169,7 @@ const Grid = styled.div`
     }
     .small {
         font-size: 0.8rem;
-        color: lightgray;
+        color: #fff;
         margin: 0;
         padding:0;
     }
@@ -194,15 +194,14 @@ const Toggle = styled.div`
 
 const ForecastContainer = styled.div`
     width: 100%;
-    
     height: 100%;
     position: relative;
     justify-content: center;
     align-items: center;
-    color: #444;
+    color: #fff;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-gap: 0.25rem;
+    grid-gap: 0.5rem;
     padding: 1rem;
     max-width: 750px;
     margin: 0 auto;
@@ -210,24 +209,25 @@ const ForecastContainer = styled.div`
         height: 100px;
     }
     .item {
-        border: solid 1px black;
         border-radius: 10px;
+        box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
     }
 `;
 
 const MainContainer = styled.div`
     text-align: center;
-    color: #444;
+    color: #fff;
+    position: relative;
 
     h2 {
-        color: #444;
+        color: #fff;
         margin: 0;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         font-weight: 300;
     }
     .description {
         text-transform: uppercase;
-        font-size: 1.1rem;
+        font-size: 0.9rem;
         font-weight: 300;
     }
     .small {
