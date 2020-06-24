@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6780d7d085e8c4d0dff4f63e35ee4839",
+    "revision": "6792557fe29ab96a0a766d08e1f9e945",
     "url": "/weather-hack/index.html"
   },
   {
-    "revision": "0a15e6e2062a7d521466",
+    "revision": "9354064a16cabf37270c",
     "url": "/weather-hack/static/css/main.5f361e03.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/weather-hack/static/js/2.46d0a0b3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0a15e6e2062a7d521466",
-    "url": "/weather-hack/static/js/main.d673b95f.chunk.js"
+    "revision": "9354064a16cabf37270c",
+    "url": "/weather-hack/static/js/main.1f902433.chunk.js"
   },
   {
     "revision": "e54ed56c4a6f96d732be",
