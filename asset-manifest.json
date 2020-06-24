@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/weather-hack/static/css/main.5f361e03.chunk.css",
+    "main.js": "/weather-hack/static/js/main.6179f8e5.chunk.js",
+    "main.js.map": "/weather-hack/static/js/main.6179f8e5.chunk.js.map",
+    "runtime-main.js": "/weather-hack/static/js/runtime-main.af40abd0.js",
+    "runtime-main.js.map": "/weather-hack/static/js/runtime-main.af40abd0.js.map",
+    "static/js/2.d182eacb.chunk.js": "/weather-hack/static/js/2.d182eacb.chunk.js",
+    "static/js/2.d182eacb.chunk.js.map": "/weather-hack/static/js/2.d182eacb.chunk.js.map",
+    "index.html": "/weather-hack/index.html",
+    "precache-manifest.bbccc58603f2847cfc55b0ec81c225cf.js": "/weather-hack/precache-manifest.bbccc58603f2847cfc55b0ec81c225cf.js",
+    "service-worker.js": "/weather-hack/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/weather-hack/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.d182eacb.chunk.js.LICENSE.txt": "/weather-hack/static/js/2.d182eacb.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.af40abd0.js",
+    "static/js/2.d182eacb.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.6179f8e5.chunk.js"
+  ]
+}
