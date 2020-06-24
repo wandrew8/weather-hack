@@ -1,22 +1,28 @@
 {
   "files": {
     "main.css": "/weather-hack/static/css/main.5f361e03.chunk.css",
-    "main.js": "/weather-hack/static/js/main.6179f8e5.chunk.js",
-    "main.js.map": "/weather-hack/static/js/main.6179f8e5.chunk.js.map",
+    "main.js": "/weather-hack/static/js/main.4751b300.chunk.js",
+    "main.js.map": "/weather-hack/static/js/main.4751b300.chunk.js.map",
     "runtime-main.js": "/weather-hack/static/js/runtime-main.af40abd0.js",
     "runtime-main.js.map": "/weather-hack/static/js/runtime-main.af40abd0.js.map",
-    "static/js/2.d182eacb.chunk.js": "/weather-hack/static/js/2.d182eacb.chunk.js",
-    "static/js/2.d182eacb.chunk.js.map": "/weather-hack/static/js/2.d182eacb.chunk.js.map",
+    "static/js/2.e7e77943.chunk.js": "/weather-hack/static/js/2.e7e77943.chunk.js",
+    "static/js/2.e7e77943.chunk.js.map": "/weather-hack/static/js/2.e7e77943.chunk.js.map",
     "index.html": "/weather-hack/index.html",
-    "precache-manifest.bbccc58603f2847cfc55b0ec81c225cf.js": "/weather-hack/precache-manifest.bbccc58603f2847cfc55b0ec81c225cf.js",
+    "precache-manifest.34eb80235d02d40e49185fee0215e9a4.js": "/weather-hack/precache-manifest.34eb80235d02d40e49185fee0215e9a4.js",
     "service-worker.js": "/weather-hack/service-worker.js",
     "static/css/main.5f361e03.chunk.css.map": "/weather-hack/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.d182eacb.chunk.js.LICENSE.txt": "/weather-hack/static/js/2.d182eacb.chunk.js.LICENSE.txt"
+    "static/js/2.e7e77943.chunk.js.LICENSE.txt": "/weather-hack/static/js/2.e7e77943.chunk.js.LICENSE.txt",
+    "static/media/cloudy.svg": "/weather-hack/static/media/cloudy.ad789581.svg",
+    "static/media/day.svg": "/weather-hack/static/media/day.7f93fbdb.svg",
+    "static/media/rainy-5.svg": "/weather-hack/static/media/rainy-5.2bd23641.svg",
+    "static/media/rainy-6.svg": "/weather-hack/static/media/rainy-6.d235ab65.svg",
+    "static/media/snowy-6.svg": "/weather-hack/static/media/snowy-6.67d63a14.svg",
+    "static/media/thunder.svg": "/weather-hack/static/media/thunder.7142c78b.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.af40abd0.js",
-    "static/js/2.d182eacb.chunk.js",
+    "static/js/2.e7e77943.chunk.js",
     "static/css/main.5f361e03.chunk.css",
-    "static/js/main.6179f8e5.chunk.js"
+    "static/js/main.4751b300.chunk.js"
   ]
 }
