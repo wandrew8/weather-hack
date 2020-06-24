@@ -132,7 +132,7 @@ const CurrentWeatherContainer = styled.div`
     align-items: center;
     color: #fff;
     img {
-        margin: 0 auto;
+        margin: -60px auto;
         height: 250px;
         padding: 0;
     }
