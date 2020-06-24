@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components';
+import moment from 'moment';
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import day from '../images/day.svg';
 import cloudy from '../images/cloudy.svg';
@@ -84,11 +85,12 @@ const CurrentWeather = (props) => {
                 {isLoading ? null : <h2>Weather Forecast for {name}</h2> }
                 <ForecastContainer>
                     {weatherForecast.filter(day => day.dt_txt.includes("12:00:00")).map(item => {
-                        const { main, weather } = item;
+                        const { main, weather, dt_txt } = item;
                         const { description, icon } = weather[0];
                         const { temp, temp_max, temp_min } = main;
                         return (
                             <div className="item">
+                                <h3>{moment(dt_txt).format('dddd')}</h3>
                                 <img src={getWeatherIcon(icon)} alt={description}/>
                                 <p className="description">{description}</p>
                                 <p>Temp: {tempType === "F" ? convertFahr(temp) : convertCelcius(temp)}°{tempType}</p>
@@ -211,6 +213,12 @@ const ForecastContainer = styled.div`
     .item {
         border-radius: 10px;
         box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
+    }
+    h3 {
+        font-size: 1.6rem;
+        padding: 0;
+        margin: 0.5rem;
+        font-weight: 300;
     }
 `;
 

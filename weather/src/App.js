@@ -95,6 +95,7 @@ function App() {
         : null
         }
       </WeatherContainer>
+      <small>Background SVG image from <a href="https://www.svgbackgrounds.com/">SVGBackgrounds.com</a></small>
     </MainContainer>
   );
 }
@@ -121,12 +122,24 @@ const MainContainer = styled.div`
   background-color: #ffffff;
   margin: 0;
   padding: 2rem;
+  height: 100%;
   min-height: 100vh;
   background-color: #00a8e8;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%2300a0db' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%230097ce' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23008fc1' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%230086b4' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23007ea7' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
   background-attachment: fixed;
   background-size: cover;
   color: #f4f3ee;
+  small {
+    position: fixed;
+    bottom: 0;
+    color: lightgray;
+    width: 100%;
+    bottom: 5px; left: 50%;
+    margin-left: -50%; /* (width + padding)/2 */
+  }
+  a {
+    color: lightgray;
+  }
   h1 {
     font-size: 2.5rem;
     font-weight: 300;
